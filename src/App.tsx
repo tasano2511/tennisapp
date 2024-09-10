@@ -16,7 +16,7 @@ interface Player {
 }
 
 const App: React.FC = () => {
-  const [players, setPlayers] = useState<Player[]>([
+  const [players] = useState<Player[]>([
     { id: 1, name: 'Roger Federer' },
     { id: 2, name: 'Serena Williams' },
     { id: 3, name: 'Rafael Nadal' },
@@ -71,17 +71,17 @@ const styles = {
   },
   header: {
     fontSize: '2em',
-    textAlign: 'center',
+    textAlign: 'center' as 'center',
   },
   paragraph: {
     fontSize: '1em',
-    textAlign: 'center',
+    textAlign: 'center' as 'center',
   },
   link: {
     display: 'block',
     margin: '20px 0',
     color: 'blue',
-    textAlign: 'center',
+    textAlign: 'center' as 'center',
     textDecoration: 'none',
   },
   button: {
@@ -102,7 +102,7 @@ const styles = {
   listItem: {
     padding: '10px',
     borderBottom: '1px solid #ccc',
-    textAlign: 'center',
+    textAlign: 'center' as 'center',
   },
   '@media (max-width: 600px)': {
     container: {
